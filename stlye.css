@@ -1,0 +1,535 @@
+.gameConnection {
+    background-image: url("Images/achtergrondConnectie1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.scoreboard {
+    position: fixed;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.team1 {
+    top: 25px;
+    left: 25px;
+    font-size: 20px;
+}
+
+.team2 {
+    top: 25px;
+    right: 25px;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 105px;
+    color: black;
+}
+
+.connectietitle {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 105px;
+    color: white;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container img {
+    margin: 10px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50cap;
+}
+
+.subcontainer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+    gap: 225px;
+}
+
+.sub1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.geenidee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.geenidee i {
+    font-size: 60px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 50cap;
+}
+
+.subcontainer input {
+    width: 250px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 1cap;
+    background-color: rgba(255, 255, 255, 55%);
+    border: 3px solid white;
+    margin-bottom: 20px;
+}
+
+.sub1 button {
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.sub1 button:hover {
+    background-color: rgb(4, 221, 4);
+}
+
+.sub2 button {
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.sub2 button:hover {
+    background-color: rgb(4, 221, 4);
+}
+
+.geenidee button {
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+}
+
+.geenidee button:hover {
+    background-color: #9f0d02;
+}
+
+.geenidee i {
+    color: white;
+    border: none;
+    background: blue;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.geenidee i:hover {
+    background-color: rgb(93, 93, 255);
+}
+
+#hint-popup {
+    display: none; 
+    position: fixed; 
+    background-color: rgba(110, 89, 183, 90%); 
+    color: white;
+    padding: 30px; 
+    border: 5px solid white; 
+    border-radius: 10px; 
+}
+
+.hint-symbol {
+    font-size: 34px; 
+    position: relative;
+    color: white; 
+    cursor: pointer;
+}
+
+.hint-title {
+    margin-top: auto;
+    color: white;
+}
+
+.hint-popup {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popup-success {
+    background-color: #4caf50; 
+    color: white;
+    display: none;
+    position: fixed;
+    font-size: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.popup-error {
+    background-color: #f44336; 
+    color: white;
+    display: none;
+    position: fixed;
+    font-size: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/*---------------------------------------------------------*/
+
+.tussenstand {
+    background-image: url("Images/AchtergrondTussenstand.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 20px solid white;
+    border-radius: 100px;
+    width: 1000px;
+    height: 700px;
+}
+
+.title {
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+}
+
+.scores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 300px;
+    font-size: 50px;
+    color: white;
+}
+
+.scores p {
+    margin-top: 0;
+}
+
+.scores .team_1 p,
+.scores .team_2 p{
+    display: flex;
+    flex-direction: column;
+    font-size: 64px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1.5px;
+}
+
+.scores .team_1 span,
+.scores .team_2 span{
+    font-size: 150px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+}
+
+
+.verder {
+    background-color: black;
+    color: white;
+    width: 285px;
+    height: 66px;
+    border-radius: 20px;
+    font-size: 28px;
+    border: 3px solid black;
+    cursor: pointer;
+    background-color: #4caf50;
+    border: none;
+}
+
+.verder:hover {
+    background-color: rgb(4, 221, 4);
+}
+
+/*---------------------------------------------*/
+
+.body1 {
+    background-image: url("Images/achtergrondintrovraag.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.introblock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 25px solid black;
+    border-radius: 50px;
+    padding: 30px;
+    background-color: rgba(217,217,217, 85%);
+}
+
+.titleintro {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 35px;
+}
+
+.text {
+    font-size: 28px;
+    font-weight: bold;
+    width: 90vh;
+}
+
+.buttons {
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.voorbeeld,
+.start {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    width: 25vh;
+    height: 6vh;
+    border: none;
+    border-radius: 15px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none; 
+    line-height: 6vh; /
+}
+
+.start {
+    margin-left: 100px;
+    background-color: green;
+}
+
+/*---------------------------------------------*/
+
+
+
+.voorbeeldvraag {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 25px solid black;
+    border-radius: 50px;
+    padding: 30px;
+    background-color: rgba(217,217,217, 85%);
+}
+
+.voorbeeldintro {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 35px;
+}
+
+.start1 {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    width: 25vh;
+    height: 6vh;
+    border: none;
+    border-radius: 15px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none; 
+    line-height: 6vh;
+    margin-top: 25px;
+}
+
+.voorbeeldvraag i {
+    position: absolute;
+    top: 15%;
+    transform: translateY(-50%);
+    left: 50px;
+    color: black;
+}
+
+video {
+    border-radius: 20px;
+}
+
+/*---------------------De Drie------------------------*/
+
+.dedrie {
+    background-image: url("Images/dedrie.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bovenstelementen{
+    margin: 0%;
+}
+.dedrie_title {
+    font-size: 64px;
+    margin-top: 20px;
+    color: white;
+}
+
+.aandebeurt {
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.dedrie_vierkant {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    background-color: rgba(255, 255, 255, 75%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.dedrie_vierkant > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.r1 {
+    border-radius: 20px 0 0 0;
+}
+
+.r3 {
+    border-radius: 0 20px 0 0;
+}
+
+.r7 {
+    border-radius: 0 0 0 20px;
+}
+
+.r9 {
+    border-radius: 0 0 20px 0;
+}
+
+.dedrie_vierkant p {
+    font-size: 32px;
+    color: black;
+}
+
+.antwoord {
+    margin-top: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.antwoord input {
+    font-size: 40px;
+    text-align: center;
+    width: 300px;
+    border-radius: 20px;
+    border: 3px solid black;
+    height: 60px;
+}
+
+
+.answersboard {
+    position: fixed;
+    left: 50px; 
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 75%);
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+.answersboard p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4caf50;
+    color: white;
+    border-radius: 25px;
+    padding: 20px;
+    border: none;
+    z-index: 1;
+}
+
+.popup-content {
+    display: block;
+    text-align: center;
+}
+
+.popup span {
+    font-size: 50px;
+}
