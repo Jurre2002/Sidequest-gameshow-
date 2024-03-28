@@ -170,7 +170,7 @@ function iftrue(teamId) {
         popupElement.style.display = "block";
     
         setTimeout(function() {
-            //Dit zorgt ervoor dat de popup verdwijnt in 4 seconden, doormiddel van het verwijderen van de classes.
+            //Dit zorgt ervoor dat de popup verdwijnt in 2 seconden, doormiddel van het verwijderen van de classes.
             popupElement.style.display = "none";
             popupElement.classList.remove("popup-error");
             popupElement.classList.remove("popup-success");
